@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
 }
-#img1,
-#img2,
-#img3 {
-  width: 500px;
-  height: 500px;
+.perroAleatorio{
+  width: 300px;
+  height: 300px;
+  display: block;
+  border-radius: 10%;
 }
 
 .imagenes {
@@ -35,13 +35,13 @@ body h1 {
   border: none;
   font-size: 20px;
   font-family: cursive;
-  background-color: burlywood;
+  background-color: rgb(222, 184, 135);
   color: azure;
   position: fixed;
 }
 
 button:hover {
-  background-color: rgb(219, 140, 37);
+  background-color: rgb(210, 130, 25);
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
@@ -53,22 +53,39 @@ img {
 }
 
 .contenedor {
-  position: relative; /* Para que los elementos absolutos dentro de este contenedor se posicionen en relación a él */
+  position: relative; 
 }
 
-#botonFavoritos {
+.botonFavoritos {
   position: absolute;
-  top: 20px; /* Ajusta según donde quieras el botón */
-  right: 10px; /* Ajusta según donde quieras el botón */
-  z-index: 10; /* Asegúrate de que el botón quede por encima de la imagen */
-  padding-right: 0; /* Elimina el padding extra si no es necesario */
+  top: 20px; 
+  right: 10px; 
+  z-index: 10; 
+  padding-right: 0;
   background-color: white;
-  border-radius: 150%;
+  border-radius: 15%;
 }
 
-#img1 {
-  width: 500px;
-  height: 500px;
-  display: block;
-  border-radius: 10%;
+.botonUnfavorite{
+  position: absolute;
+  top: 20px; 
+  right: 10px; 
+  z-index: 10; 
+  padding-right: 0;
+  background-color: rgb(255, 0, 0);
+  border-radius: 15%;
+}
+
+.botonFavoritos:hover, .botonUnfavorite:hover{
+  cursor: pointer;
+}
+
+#favoritos{
+  text-align: center;
+}
+
+.imagenesFavoritas{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+
 }
