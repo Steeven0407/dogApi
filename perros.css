@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.perroAleatorio{
+.perroAleatorio {
   width: 300px;
   height: 300px;
   display: block;
@@ -40,7 +40,7 @@ body h1 {
   position: fixed;
 }
 
-button:hover {
+#cambiarImagen:hover {
   background-color: rgb(210, 130, 25);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -53,39 +53,39 @@ img {
 }
 
 .contenedor {
-  position: relative; 
+  position: relative;
 }
 
 .botonFavoritos {
   position: absolute;
-  top: 20px; 
-  right: 10px; 
-  z-index: 10; 
+  top: 20px;
+  right: 10px;
+  z-index: 10;
   padding-right: 0;
   background-color: white;
   border-radius: 15%;
 }
 
-.botonUnfavorite{
+.botonUnfavorite {
   position: absolute;
-  top: 20px; 
-  right: 10px; 
-  z-index: 10; 
+  top: 20px;
+  right: 10px;
+  z-index: 10;
   padding-right: 0;
   background-color: rgb(255, 0, 0);
   border-radius: 15%;
 }
 
-.botonFavoritos:hover, .botonUnfavorite:hover{
+.botonFavoritos:hover,
+.botonUnfavorite:hover {
   cursor: pointer;
 }
 
-#favoritos{
+#favoritos {
   text-align: center;
 }
 
-.imagenesFavoritas{
+.imagenesFavoritas {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-
+  grid-template-columns: repeat(5, 1fr);
 }
