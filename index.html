@@ -11,7 +11,7 @@
 <body>
     <h1>Perritos la Api :D!!</h1>
 
-    <span id="error"></span>
+<!-- <span id="error"></span> -->
 
     <button id="cambiarImagen">Cambiar imagenes aleatorias</button>
     <h2 class="subtitulo">Perros Aleatorios</h2>
@@ -51,6 +51,23 @@
     </section>
 
 
+    <section id="subirImagenPropia">
+        <h2>Subir una imagen propia</h2>
+        <form id="formulario" action="">
+            <input type="file" name="file" id="file" >
+            
+            <label for="file" class="labelFormulario">Selecciona la imagen
+                <img id="preview" src="">
+            </label>
+            <button type="button"  class="botonSubir" onclick="subirImagenPerro()">Subir imagen de perro</button>
+        </form>
+
+    </section>
+    <footer>
+        <h2>Todos los derechos de diseño de esta pagina son reservados de steeven andre sayago</h2>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./perros.js"></script>
 </body>
 

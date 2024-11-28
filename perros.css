@@ -40,7 +40,7 @@ body h1 {
   position: fixed;
 }
 
-button:hover {
+#cambiarImagen:hover, .botonSubir:hover{
   background-color: rgb(210, 130, 25);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -76,7 +76,7 @@ img {
   border-radius: 15%;
 }
 
-.botonFavoritos:hover, .botonUnfavorite:hover{
+.botonFavoritos:hover, .botonUnfavorite:hover, .botonSubir:hover{
   cursor: pointer;
 }
 
@@ -88,4 +88,69 @@ img {
   display: grid;
   grid-template-columns: repeat(5,1fr);
 
+}
+
+#subirImagenPropia{
+  align-items: center;
+  display: block;
+  padding-bottom: 20px;
+}
+
+#subirImagenPropia h2{
+  font-family: cursive;
+  color: cadetblue;
+  text-align: center;
+  font-size: 40px;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#preview {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+#formulario label{
+  margin: 10px;
+  padding: 30px 300px;
+  font-size: 40px;
+  font-family: cursive;
+  background-color: beige;
+  color: rgb(210, 130, 25);
+  border-style: dashed;
+}
+
+#formulario label:hover{
+  cursor: pointer;
+}
+
+.botonSubir{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  background-color: rgb(222, 184, 135);
+  color: azure;
+  border: none;
+}
+
+footer{
+  font-family: cursive;
+  font-size: 10px;
+  color: cadetblue;
+}
+
+#file{
+  display: none;
+}
+.labelFormulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
 }
