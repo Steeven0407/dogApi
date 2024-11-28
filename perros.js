@@ -170,4 +170,4 @@ document.getElementById('file').addEventListener('change', function(event) {
 cargarPerrosAleatorios()
 cargarPerrosFavoritos()
 
-btn.addEventListener("click", cargarPerrosAleatorios) 
+btn.addEventListener("click", cargarPerrosAleatorios)  
