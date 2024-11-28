@@ -88,7 +88,6 @@ const cargarPerrosFavoritos = async () => {
 
     } catch (error) {
         console.error("Error fetching data:", error);
-        spanError.innerHTML ="Hubo un Error en la solicitud de los favoritos "
     }
 }
 
@@ -97,7 +96,6 @@ const subirPerrosFavoritos = async (id) => {
         image_id: id
     })
         if(status!==200){
-            spanError.innerHTML="hubo un error:" + status + data.message;
             console.log(        status + data.message)
         }else{
             console.log("Se guardo en favoritos");
@@ -118,7 +116,6 @@ const eliminarFavorito = async (id)=>{
     const data = await response.json();
 
     if(response.status!==200){
-        spanError.innerHTML="hubo un error:" + response.status + data.message;
         console.log(response.status + data.message)
     }else{
         console.log("Se elimino de favoritos");
@@ -145,7 +142,6 @@ const subirImagenPerro = async()=>{
     const data = await response.json();
     
     if(data.status!==200){
-        spanError.innerHTML="hubo un error:" + response.status + data.message;
         console.log(response.status + data.message)
         //console.log({data})
     }else{
